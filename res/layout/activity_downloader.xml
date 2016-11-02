@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_downloaded"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                 >
+
+                <CheckBox
+                    android:id="@+id/cb_downloaded"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:text="已下载"
+                    android:checked="true" />
+
+                <ListView
+                    android:id="@+id/lv_downloaded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_downloading"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                 >
+
+                <CheckBox
+                    android:id="@+id/cb_downloading"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:text="正在下载"
+                    android:checked="true" />
+
+                <ListView
+                    android:id="@+id/lv_downloading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
